@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014 Carola Fanselow Freie Universität Berlin
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+
+	<message key="plugins.generic.langSciPages.displayName">LangSci Pages Plugin</message>
+	<message key="plugins.generic.langSciPages.description">Loads the pages needed for static pages</message>
+
+
+	<message key="plugins.generic.langSciPages.title.newsletter">Newsletter</message>
+	<message key="plugins.generic.langSciPages.title.advisoryBoard">Senior Editors and Advisory Board</message>
+
+	<message key="plugins.generic.langSciPages.title.forAuthors">Information for authors</message>
+	<message key="plugins.generic.langSciPages.title.forEditors">Information for series editors</message>
+	<message key="plugins.generic.langSciPages.title.forReaders">Information for readers</message>
+
+	<message key="plugins.generic.langSciPages.title.contact">Press Contact</message>
+	<message key="plugins.generic.langSciPages.title.imprint">Imprint</message>
+	<message key="plugins.generic.langSciPages.title.templates">Download templates</message>
+	<message key="plugins.generic.langSciPages.title.reviewConfigurations">My Review Configurations</message>
+	<message key="plugins.generic.langSciPages.title.achievements">My Achievements</message>
+	<message key="plugins.generic.langSciPages.title.series">Series</message>
+	<message key="plugins.generic.langSciPages.title.groupMail">Send Email to Usergroups</message>
+
+
+
+<message key="plugins.generic.langSciPages.content.groupMail"><![CDATA[The email to user groups will be available soon.
+]]>
+</message>
+
+<message key="plugins.generic.langSciPages.content.newsletter"><![CDATA[Anmerkung: Soll es hier möglich sein, den Newsletter zu bestellen, ohne sich zu registrieren?
+]]>
+</message>
+
+
+
+
+<message key="plugins.generic.langSciPages.content.advisoryBoard"><![CDATA[
+<p>
+The project is run by Martin Haspelmath (Max Planck Institute for Evolutionary Anthropology) and Stefan Müller (Freie Universität Berlin).
+<p>
+The task of the advisory board is to look at series proposals and give recommendations whether a series should be established or not. It will also get involved when general strategic decisions have to be made.
+<p>
+
+The advisory board consists of (to be completed):
+<ul>
+<li>Artemis Alexiadou (Universität Stuttgart)
+<li>Jim Blevins (University of Cambridge)
+<li>Balthasar Bickel (Universität Zürich)
+<li>Geert Booij (Leiden University)
+<li>Miriam Butt (University of Konstanz)
+<li>Ewa Dąbrowska (Northumbria University, Newcastle)
+<li>Arnulf Deppermann (Institut für Deutsche Sprache, Mannheim)
+<li>Nomi Erteschik-Shir (Ben Gurion University of the Negev)
+<li>Martine Grice (University of Cologne)
+<li>Mutsumi Imai (Keio University at Shonan-Fujisawa)
+<li>Laura Kallmeyer (University of Düsseldorf)
+<li>Manfred Krifka (Humboldt Universität zu Berlin and Zentrum für Allgemeine Sprachwissenschaft, ZAS)
+<li>Mary Esther Kropp Dakubu (University of Ghana)
+<li>Aditi Lahiri (University of Oxford)
+<li>Stephen Levinson (Max Planck Institute for Psycholinguistics in Nijmegen)
+<li>Anke Lüdeling (Humboldt-Universität zu Berlin)
+<li>Detmar Meurers (Eberhard-Karls-Universität Tübingen)
+<li>Sam Mchombo (University of California, Berkeley)
+<li>Rachel Nordlinger (University of Melbourne)
+<li>Jairo Nunes (University São Paulo)
+<li>Steven Pinker (Harvard University)
+<li>Friedemann Pulvermüller (Freie Universität Berlin)
+<li>Stuart Shieber (Harvard University)
+<li>Dieter Stein (Universität Düsseldorf)
+</ul>
+]]>
+</message>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<message key="plugins.generic.langSciPages.content.forAuthors"><![CDATA[
+
+<h3>Submission</h3>
+
+<p>All our books belong to a series. Please select a pertinent <a href="{$pressUrl}series">series</a> and contact the series editor to see whether your work fits.
+We recommend you use our <a href="{$pressUrl}information/templates">templates</a> for drafting your manuscript. The initial submission should be in pdf format. 
+In order to submit, use the <a href="{$pressUrl}submission/wizard">submission wizard</a>.</p>
+
+<p>Note that the platform is still under development. If you have questions concerning the use of the software contact
+<a href="{$pressUrl}about/contact">Sebastian Nordhoff</a>.</p>
+
+<br>
+
+<h3>Peer Review Process</h3>
+
+<p>Book manuscripts are peer-reviewed by at least two reviewers who are selected by the respective series editors. For edited volumes this review may be skipped provided the contributions in the volume have been peer-reviewed and the review process is documented.</p>
+
+<p>The review process has two possible outcomes: rejection or acceptance conditional upon implementation of changes. There is no revise and resubmit, but rejected manuscripts can be resubmitted after a year. If a book is not accepted within six months after submission, it counts as rejected.</p>
+
+<p>Please refer to the <a href="{$ompUrl}public/downloads/LangSci_Guidelines.pdf">guidelines</a> for details of the reviewing procedure and
+the <a href="{$ompUrl}public/downloads/LangSci_UserGuide_ForAuthors.pdf">user guide</a> for an understanding of the interaction with the website.</p>
+
+<br>
+
+<h3>The Workflow</h3>
+<p><img src="../public/downloads/LangSci_Workflow_fancy.jpg" width="100%"></p>
+<a href="../public/downloads/LangSci_Workflow.pdf">Description of the workflow</a>.
+
+<br>
+
+<h3>Tools</h3>
+
+<h4>1. Converter</h4> 
+
+<p>Convert MS Word or Libre Office files to LaTeX.          
+Choose a Word or LibreOffice file (doc, docx, odt).</p>
+
+<div class="content">
+
+    <form action="http://www.glottotopia.org/doc2tex/result" method="post" enctype="multipart/form-data">
+    	<p>
+			<input class="LSPconverterButtonBrowse" name="docfile" type="file">
+			<input class="LSPconverterButtonSubmit" type="submit"/>
+		</p>
+    </form>
+
+</div>
+
+<br>
+<h4>2. Sanity check</h4>
+
+
+<p>Check whether your manuscript meets our formal criteria. Choose a tex, bib or zip file.</p>
+             
+
+<form enctype="multipart/form-data" method="post" action="http://glottotopia.org/doc2tex/sanitycheck">
+
+	<p>
+		<input class="LSPconverterButtonBrowse" type="file" size="50" name="texbibzip">
+		<input class="LSPconverterButtonSubmit" type="submit">
+	</p>
+	
+
+</form> 
+
+<h3>Service providers</h3>
+
+If there are certain parts of the manuscript creation for which you do not have the time or skills, we can recommend the following service providers:
+
+Manuscript conversion from doc to tex and application of our stylesheet:
+
+	<ul>
+		<li> <a href="http://media.cidles.eu/services/word-to-latex-conversion/">Cidles.eu</a> </li>
+		<!--
+		<li> Birgit Jänen </li>
+		<li> Iana Stefanova</li>
+		-->
+	</ul>
+
+]]>
+</message>
+
+
+
+<message key="plugins.generic.langSciPages.content.forEditors"><![CDATA[
+
+<p>Our <a href="{$ompUrl}public/downloads/LangSci_UserGuide_ForEditors.pdf">user guide</a> explains the tasks of the editors and the interaction with the OMP platform. Refer to the <a href="{$ompUrl}public/downloads/LangSci_Guidelines.pdf">guidelines</a> for details of the reviewing procedure.</p>
+
+<p>If you want to establish a new series, please fill out the <a href="{$ompUrl}public/downloads/series-proposals-for-langsci-press.odt">proposal form</a>. The proposal will be sent to our 
+<a href="{$pressUrl}about/advisoryBoard">advisory board</a>. It will take about one month to take a decision. </p>
+
+<h3>The Workflow</h3>
+<p><img src="{$ompUrl}/public/downloads/LangSci_Workflow_fancy.jpg" width="100%"></p>
+<a href="{$ompUrl}/public/downloads/LangSci_Workflow.pdf">Description of the workflow</a>.
+
+]]>
+</message>
+
+
+
+
+<message key="plugins.generic.langSciPages.content.forReaders"><![CDATA[
+
+<p>We encourage readers to register with Language Science Press. Use the
+<a href="{$pressUrl}user/register">Register</a> link at the top of the homepage.</p>
+
+<p>Registered users can choose to support Language Science Press by being listed on our public <a href="{$pressUrl}about/supporters">supporter page</a>. 
+
+
+<p>If you want to get informed about new books, new series and similar things, you may follow
+<a href="https://twitter.com/LangSciPress">Language Science Press on twitter</a>.</p>
+
+
+<p>If you want to get general information about the process of organizing all this you may follow <a href="https://twitter.com/haspelmath">Martin Haspelmath</a> and/or
+<a href="https://twitter.com/StefanMuelller">Stefan Müller</a> on twitter.</p>
+
+]]>
+</message>
+
+
+<message key="plugins.generic.langSciPages.content.contact"><![CDATA[
+<h3>Mailing Address</h3>
+<p>Prof. Dr. Ste­fan Mül­ler<br />
+	Language Science Press<br />
+	Ha­bel­schwerd­ter Allee 45<br />
+	14 195 Ber­lin <br />
+	Germany
+</p>
+
+<div class="separator"></div>
+
+<h3>Principal Contact</h3>
+
+<p><strong>Sebastian Nordhoff</strong><br />
+	Dr.<br />
+	Freie Universität Berlin
+</p>
+
+<p>Sebastian Nordhoff<br />
+	Language Science Press<br />
+	Ha­bel­schwerd­ter Allee 45<br />
+	14 195 Ber­lin
+</p>
+<p>Germany</p>
+
+<p>Phone: (+49) (30) 838 72193<br />
+	Fax: (+49) (30) 838 4 52973<br />
+	Email: <a href="mailto:sebastian.nordhoff@langsci-press.org">sebastian.nordhoff@langsci-press.org</a>
+</p>
+
+<div class="separator"></div>
+
+<h3>Support Contact</h3>
+<p><strong>Sebastian Nordhoff</strong><br />
+	Email: <a href="mailto:sebastian.nordhoff@langsci-press.org">sebastian.nordhoff@langsci-press.org</a>
+</p>
+
+]]>
+</message>
+
+<message key="plugins.generic.langSciPages.content.imprint"><![CDATA[
+<p>Press Directors:
+	<a href="http://hpsg.fu-berlin.de/~stefan/">Stefan Müller</a> and
+	<a href="http://www.eva.mpg.de/lingua/staff/haspelmath/home.php">Martin Haspelmath</a>
+</p>
+
+<p>Press Coordinator: <a href="mailto:Sebastian.Nordhoff@langsci-press.org">Sebastian Nordhoff</a></p>
+
+<p>Advisory Board: <a href="{$pressUrl}about/advisoryBoard">see main page</a></p>
+
+<p>Series Editors: select series on our <a href="{$pressUrl}series">series page</a></p>
+
+<p>Design: Dipl. Designer Ulrike Harbort</p>
+
+<p>Design Consulting:
+<a href="http://www.kh-berlin.de/index.php5?groupID=16&amp;groupIDs=&amp;personID=2438&amp;Action=showGroupPerson">
+Prof. Barbara Schmidt</a> (Weißensee Kunsthochschule Berlin)</p>
+
+<p>LaTeX classes: <a href="http://user.phil-fak.uni-duesseldorf.de/~lichte/">Timm Lichte</a></p>
+
+<p>Fonts: <a href="http://www.llf.cnrs.fr/Gens/Crysmann/">Berthold Crysmann</a></p>
+
+<p>Dienstanbieter: Freie Universität Berlin, vertreten durch den <a href="http://www.fu-berlin.de/einrichtungen/organe/praesidium/praesident/index.html" target="_self">Präsidenten</a>.</p>
+<p>Anschrift:</p>
+<p>Freie Universität Berlin<br />
+Präsidium<br />
+Kaiserswerther Str. 16/18<br />
+14195 Berlin</p>
+<p>Inhaltliche Verantwortung nach § 55 RfStV:</p>
+<p>Sebastian Nordhoff<br />
+Language Science Press<br />
+Ha­bel­schwerd­ter Allee 45<br />
+14195 Ber­lin<br />
+Phone: (+49) (30) 838 72193<br />
+Fax: (+49) (30) 838 4 52973<br />
+E-Mail: <a href="mailto:sebastian.nordhoff@langsci-press.org">sebastian.nordhoff@langsci-press.org</a></p>
+<p>Rechtsform:</p>
+<p>Die Freie Universität Berlin ist eine Körperschaft des öffentlichen Rechts gem. §§ 1 und 2 Berliner Hochschulgesetz (BerlHG). Das Webangebot der Freien Universität Berlin unterliegt dem geltenden <a title="Freie Universität Berlin: Urheberrecht/Copyright" href="http://www.fu-berlin.de/redaktion/copyright/index.html">Urheberrecht</a>. Beachten Sie bitte auch unseren <a title="Haftungsausschluss - Disclaimer, FU Berlin" href="http://www.fu-berlin.de/redaktion/disclaimer/index.html">Haftungsausschluss/Disclaimer.</a></p>
+<p>Aufsichtsbehörde:</p>
+<p>Aufsichtsbehörde ist die nach § 89 BerlHG zuständige Berliner Senatsverwaltung für Bildung, Wissenschaft und Forschung.</p>
+		
+]]></message>
+
+
+
+
+
+<message key="plugins.generic.langSciPages.content.guidelines"><![CDATA[
+<ul>
+	<li><a href="{$ompUrl}public/downloads/LangSci_Guidelines.pdf">guidelines</a> for style and formatting </li>
+</ul
+]]></message>
+
+
+
+<message key="plugins.generic.langSciPages.content.templates"><![CDATA[
+<ul> 
+    <li> <a href="{$ompUrl}public/downloads/LangSci_Guidelines.pdf">Guidelines</a> for style and formatting  </li>
+	<li> <a href="http://www.eva.mpg.de/fileadmin/content_files/staff/martin_haspelmath/pdf/GenericStyleRules.pdf">Generic Style Rules for Linguistics</a></li>
+	<li> <a href="{$ompUrl}public/downloads/skeleton.zip">Latex-skeleton for monographs</a>. Download, unzip and open lsp-skeleton.tex</li>
+	<li> <a href="{$ompUrl}public/downloads/edskeleton.zip">Latex-skeleton for edited volumes</a>. Download, unzip and open lsp-edskeleton.tex</li>
+	<li> <a href="{$ompUrl}public/downloads/skeletonnofonts.zip">Latex-skeleton without fonts</a>. Download, unzip and open lsp-skeletonnofonts.tex</li>
+    <li> <a href="{$ompUrl}public/downloads/lsp-template-MS.dotx"> Template for MS Word</a> </li>
+	<li> <a href="{$ompUrl}public/downloads/lsp-template-OO.ott"> Template for LibreOffice/OpenOffice</a> </li>
+    <li>get the <a href="{$ompUrl}public/downloads/LinLibertineTTF_5.3.0_2012_07_02.tgz">Libertine fonts</a></li>
+</ul>
+]]></message>
+
+
+<message key="plugins.generic.langSciPages.content.reviewConfigurations"><![CDATA[
+<p>Anmerkung: Diese Seite ist nur ein Vorschlag. Sie - und der dazugehörige Link - würden später nur für Reviewer vorhanden sein.</p>
+
+<p>Hier können Reviewer für jedes Buch, das sie begutachtet haben angeben, ob es: </p>
+<ul>
+	<li>ohne Namen in ihren Achievements erscheinen soll (oder gar nicht)</li>
+	<li>mit Namen in ihren Achievements erscheinen soll</li>
+	<li>ob ihr Review öffentlich einsehbar sein soll</li>
+</ul>
+</p>
+]]></message>
+
+
+
+<message key="plugins.generic.langSciPages.content.achievements"><![CDATA[
+<p>You have no achievements yet. You can support Languages Science Press as a reviewer, proofreader, typesetter or public supporter.</p>
+
+<p>Anmerkung: Diese Seite ist nur ein Vorschlag. Hier könnte jeder User (nur) seine eigenen Achievements (public supporter, reviews, typesetting, proofreading, später ggf. Anzahl der Kommentare) einsehen. </p>
+]]></message>
+
+
+<message key="plugins.generic.langSciPages.content.series"><![CDATA[
+<br><br>
+
+<table>
+	<tr>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cmle.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Computational Models of Language Evolution</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/cfls.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">African Language Grammars and Dictionaries</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cal.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Conceptual Foundations of Language Science</a></p>
+				</div>
+			</div>
+		</td>
+  </tr>
+	<tr>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cmle.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Computational Models of Language Evolution</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/cfls.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">African Language Grammars and Dictionaries</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cal.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Conceptual Foundations of Language Science</a></p>
+				</div>
+			</div>
+		</td>
+  </tr>	<tr>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cmle.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Computational Models of Language Evolution</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/cfls.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">African Language Grammars and Dictionaries</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cal.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Conceptual Foundations of Language Science</a></p>
+				</div>
+			</div>
+		</td>
+  </tr>	<tr>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cmle.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Computational Models of Language Evolution</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/cfls.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">African Language Grammars and Dictionaries</a></p>
+				</div>
+			</div>
+		</td>
+		<td>
+			<div class="seriesCover">
+				<div class="coverImg">
+					<img class="seriesCoverImg" src="{$ompUrl}plugins/generic/langSciPages/img/samplecover-cal.pdf-212x300.png" alt="algad">
+				</div>
+				<div class="coverTitle">
+					<p><a href="{$pressUrl}catalog/series/cmle">Conceptual Foundations of Language Science</a></p>
+				</div>
+			</div>
+		</td>
+  </tr>
+
+
+
+
+
+
+</table>
+
+
+]]></message>
+
+
+</locale>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
