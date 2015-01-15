@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  * Copyright (c) 2014 Carola Fanselow Freie Universität Berlin
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+
+	<message key="plugins.generic.hallOfFame.displayName">Hall of Fame Plugin</message>
+	<message key="plugins.generic.hallOfFame.description">Displays Achievements of Reviewers, Typesetters, Proofreaders</message>
+	<message key="plugins.generic.title.halloffame">Hall of Fame</message>
+	<message key="plugins.generic.intro.halloffame">The following people already supported Language Science Press by typesetting
+or proofreading monographs. Each star signifies one monograph. Click on the grey arrow to the left to get the names of the monograph a person worked on. </message>
+
+
+</locale>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
