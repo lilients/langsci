@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../dtd/locale.dtd">
+
+<!--
+  * locale/es_ES/grid.xml
+  *
+  * Copyright (c) 2014 Simon Fraser University Library
+  * Copyright (c) 2000-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the es_ES locale.
+  *
+  -->
+
+<locale name="es_ES" full_name = "Español (España)">
+	<!-- Common -->
+	<message key="grid.noItems">No hay artículos</message>
+	<message key="grid.settings">Preferéncias</message>
+
+	<message key="grid.action.sort">Orden</message>
+	<message key="grid.action.addItem">Agregar ítem</message>
+	<message key="grid.action.delete">Borrar</message>
+	<message key="grid.action.edit">Editar</message>
+	<message key="grid.action.restoreDefaults">Restaurar valores por defecto</message>
+	<message key="grid.action.bookInfo">Submission Info</message>
+
+	<!-- Common Grid Column Titles -->
+	<message key="grid.columns.actions">Acciones</message>
+	<message key="grid.columns.institution">Institución</message>
+	<message key="grid.columns.url">URL</message>
+
+	<!-- Sponsors Grid -->
+	<message key="grid.sponsor.title">Patrocinadores</message>
+
+	<!-- Masthead Grid -->
+	<!-- Contributor Grid -->
+	<message key="grid.contributor.title">Ayudante</message>
+
+	<!-- Review Forms Grid -->
+	<message key="grid.reviewForm.title">Formularios de revisión</message>
+
+	<!-- Artwork Files Grid -->
+	<message key="grid.artworkFile.caption">Título</message>
+	<message key="grid.artworkFile.credit">Crédito</message>
+	<message key="grid.artworkFile.copyrightOwner">Propietario del Copyright</message>
+	<message key="grid.artworkFile.copyrightContact">Información de contacto (si no hay autor/prensa)</message>
+	<message key="grid.artworkFile.permissionTerms">Términos de Licencia</message>
+	<message key="grid.artworkFile.placement">Situación en el libro</message>
+	<!-- Library Files -->
+	<message key="grid.libraryFiles.column.files">Ficheros</message>
+	<message key="grid.libraryFiles.submission.title">Envíos a la Biblioteca</message>
+	<message key="grid.libraryFiles.editorial.title">Editorial de la Biblioteca</message>
+	<message key="grid.libraryFiles.review.title">Revisión de la Biblioteca</message>
+	<message key="grid.libraryFiles.production.title">Producción de la Biblioteca</message>
+	<message key="grid.libraryFiles.productionTemplate.title">Producción de plantillas de la Biblioteca</message>
+	<message key="grid.action.viewLibrary">Ver biblioteca de documentos</message>
+
+	<!-- SubmissionChecklist -->
+	<message key="grid.submissionChecklist.title">Lista de comprobación de la presentación</message>
+	<message key="grid.submissionChecklist.column.checklistItem">Item de la lista de comprobación</message>
+
+	<!-- Submission Contributors -->
+	<message key="grid.action.remove">Eliminar</message>
+	<message key="grid.action.approve">Aprobar</message>
+	<message key="grid.action.decline">Declinar</message>
+	<message key="grid.action.moreInformation">Más información</message>
+	<message key="grid.action.addAuthor">Añadir autor</message>
+	<message key="author.users.contributor.name">Nombre</message>
+	<message key="author.users.contributor.email">Correo electrónico</message>
+	<message key="author.users.contributor.role">Rol</message>
+	<message key="author.users.contributor.principalContact">Contacto Principal</message>
+</locale>

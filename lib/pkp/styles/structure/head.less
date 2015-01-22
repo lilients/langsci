@@ -1,0 +1,37 @@
+/**
+ * @file styles/structure/head.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_structure_head
+ *
+ * @brief Classes for the page header structural elements
+ */
+
+@head_height: 96px;
+
+.pkp_structure_head {
+	height: @head_height;
+	background-color: #a2c6dc;
+
+	.pkp_structure_masthead {
+		background-color: #fff;
+		height: @head_height;
+	}
+	
+	.pkp_structure_masthead h1 {
+		padding: 0px;
+
+		img {
+			margin: 0px auto 0px auto;
+			padding: 0px;
+
+			max-width: 100%;
+			max-height: @head_height;
+			width: auto;
+			height: auto;
+		}
+	}
+}
