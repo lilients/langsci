@@ -10,30 +10,31 @@
  */
 
 /**
- * Compilable libraries
+ * Compilable librariesstyles
  */
 
 /* Superfish - http://users.tpg.com.au/j_birch/plugins/superfish/ */
-@import url("lib/pkp/styles/lib/superfish/superfish.css");
+@import url("../lib/pkp/styles/lib/superfish/superfish.css");
 
 /* Pines Notify - http://pines.sourceforge.net/pnotify/ */
-@import url("lib/pkp/styles/lib/jquery.pnotify.default.css");
+@import url("../lib/pkp/styles/lib/jquery.pnotify.default.css");
 
 /* Tag it! - http://plugins.jquery.com/project/tag-it/ */
-@import url("lib/pkp/styles/lib/tagit.css");
+@import url("../lib/pkp/styles/lib/tagit.css");
 
 
 /**
  * OMP resets to override unwanted styles in external libs
  */
-@import url("styles/resets.less");
+@import url("./resets.less");
+@import url("./variables.less");
 
 
 /**
  * PKP Library imports
  */
 
-@import url("lib/pkp/styles/index.less");
+@import url("../lib/pkp/styles/index.less");
 
 
 /**
@@ -41,19 +42,19 @@
  */
 
 /* Structure */
-@import url("styles/structure/index.less");
+@import url("./structure/index.less");
 
 /* Link Actions */
-@import url("styles/linkActions.less");
+@import url("./linkActions.less");
 
 /* Listing tables */
-@import url("lib/pkp/styles/listing.less");
+@import url("../lib/pkp/styles/listing.less");
 
 /* Controllers */
-@import url("styles/controllers/index.less");
+@import url("./controllers/index.less");
 
 
 /* Styles specific to template subfolders. */
-@import url("styles/common.less");
-@import url("styles/submission.less");
-@import url("styles/pages/index.less");
+@import url("./common.less");
+@import url("./submission.less");
+@import url("./pages/index.less");
