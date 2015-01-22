@@ -119,8 +119,8 @@ the <a href="{$ompUrl}public/downloads/LangSci_UserGuide_ForAuthors.pdf">user gu
 <br>
 
 <h3>The Workflow</h3>
-<p><img src="../public/downloads/LangSci_Workflow_fancy.jpg" width="100%"></p>
-<a href="../public/downloads/LangSci_Workflow.pdf">Description of the workflow</a>.
+<p><img src="{$ompUrl}/public/downloads/LangSci_Workflow_fancy.jpg" width="100%"></p>
+<a href="{$ompUrl}/public/downloads/LangSci_Workflow.pdf">Description of the workflow</a>.
 
 <br>
 
