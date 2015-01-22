@@ -1,0 +1,1630 @@
+@import url("../lib/pkp/styles/lib/superfish/superfish.css");
+@import url("../lib/pkp/styles/lib/jquery.pnotify.default.css");
+@import url("../lib/pkp/styles/lib/tagit.css");
+@import url("content.css");
+/**
+ * @file styles/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Main OMP stylesheet wrapper
+ *
+ */
+/**
+ * Compilable librariesstyles
+ */
+/* Superfish - http://users.tpg.com.au/j_birch/plugins/superfish/ */
+/* Pines Notify - http://pines.sourceforge.net/pnotify/ */
+/* Tag it! - http://plugins.jquery.com/project/tag-it/ */
+/**
+ * OMP resets to override unwanted styles in external libs
+ */
+/**
+ * @file styles/resets.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @brief Resets to revert styles that we don't want that are externally set
+ *
+ */
+/**
+ * Resets for OOCSS libraries.css
+ */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+* :focus {
+  outline: 0;
+}
+/**
+ * jQuery UI resets.
+ */
+.ui-widget,
+.ui-widget a,
+.ui-widget-content {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+/**
+ * PKP Library imports
+ */
+/**
+ * @file styles/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @brief Main OMP stylesheet wrapper
+ *
+ */
+/**
+ * Helpers etc.
+ */
+/**
+ * @file styles/helpers.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @brief Helper classes
+ *
+ */
+.pkp_helpers_invisible {
+  visibility: hidden;
+}
+.pkp_helpers_clear {
+  clear: both;
+}
+.pkp_helpers_debug,
+.pkp_helpers_debug div {
+  border: 1px dashed red;
+  padding: 2px;
+}
+.pkp_helpers_icon_link_valign {
+  line-height: 24px;
+}
+.pkp_helpers_moveicon {
+  cursor: move;
+}
+.pkp_helpers_full {
+  width: 100%;
+}
+.pkp_helpers_half {
+  width: 48%;
+}
+.pkp_helpers_third {
+  width: 31%;
+}
+.pkp_helpers_quarter {
+  width: 23%;
+}
+.pkp_helpers_threeQuarter {
+  width: 73%;
+}
+.pkp_help {
+  color: #999999;
+  font-weight: normal;
+  font-size: 80%;
+  padding: 10px;
+}
+.pkp_help_title {
+  /* 	text-transform: uppercase; */
+  /* 	font-family: "Courier New", Courier, mono; */
+}
+.pkp_helpers_black_bg {
+  background-color: black;
+}
+div.pkp_helpers_progressIndicator {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background: url({$baseUrl}/lib/pkp/templates/images/throbber.gif) no-repeat;
+  display: none;
+}
+li.show {
+  list-style: disc;
+  margin-left: 1px;
+}
+/**
+ * Library CSS overrides
+ */
+/**
+ * @file styles/plupload.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Override the plupload styles
+ */
+div.plupload div.plupload_header {
+  display: none;
+}
+.plupload .plupload_filelist_header {
+  display: none;
+}
+.plupload_header_content {
+  background-image: none;
+  display: none;
+}
+.plupload_header_content_bw {
+  background-image: none;
+}
+.plupload_header_title {
+  display: none;
+}
+.plupload_scroll {
+  max-height: 25px;
+  min-height: 25px;
+  _height: 25px;
+}
+.plupload_hidden {
+  display: none;
+}
+.plupload_droptext {
+  line-height: 25px;
+}
+/**
+ * Legacy styles needing refactoring
+ */
+/* Content Elements */
+/* @import url("./sprites.less"); */
+/* Page Elements */
+/**
+ * @file styles/pages/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Pages stylesheet wrapper
+ *
+ */
+/**
+ * @file styles/pages/workflow.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles for the workflow pages
+ *
+ */
+.pkp_page_header {
+  position: relative;
+}
+.pkp_page_header ul.submission_actions {
+  position: relative;
+  z-index: 20;
+}
+.pkp_page_header #E5E1DD ul.submission_actions li {
+  line-height: 24px;
+  margin-left: 20px;
+  padding: 5px 1px 4px 1px;
+}
+.pkp_page_header li.participants {
+  margin-right: 10px;
+}
+.pkp_page_header li.participants:hover,
+.pkp_page_header li.expandedIndicator {
+  background: #fff;
+  border: 1px solid #999;
+  border-bottom: 1px solid #fff;
+  padding: 4px 10px 3px 10px !important;
+  margin: 0px 0px 0px 10px !important;
+}
+.pkp_page_header .participant_popover {
+  border: 1px solid #999;
+  width: 300px;
+  right: 0px;
+  top: 34px;
+  margin-top: -2px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+}
+.pkp_page_header ul.submission_actions a {
+  /* 		text-decoration: underline; */
+}
+.pkp_page_header .submission_progress_wrapper {
+  clear: both;
+  padding-top: 28px;
+}
+.pkp_page_header .submission_progress {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+.pkp_page_header .submission_progress li {
+  height: 37px;
+  line-height: 12px;
+  width: 19.5%;
+  /* 		background-image:url('{$baseUrl}/lib/pkp/templates/images/structure/workflow_inactive.png'); */
+  text-align: center;
+  color: #ffffff;
+  float: none;
+  vertical-align: middle;
+  display: table-cell;
+}
+.pkp_page_header .submission_progress li a {
+  text-decoration: none;
+  /* 		font-family: "Courier New",Courier,mono; */
+  font-size: 12px;
+  /* 		text-transform: uppercase; */
+  color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.pkp_page_header .submission_progress li.actionNeeded {
+  /* 		background-image:url('{$baseUrl}/lib/pkp/templates/images/structure/workflow_actionNeeded.png'); */
+}
+.pkp_page_header .submission_progress li.stageDisabled {
+  background-image: none;
+  background-color: #e5e1dd;
+}
+.pkp_page_header .submission_progress li.stageDisabled a {
+  color: #999999;
+}
+.pkp_page_header .submission_progress li.productionReady {
+  /* 		background-image:url('{$baseUrl}/lib/pkp/templates/images/structure/workflow_productionReady.png'); */
+}
+.pkp_page_header .submission_progress li.current {
+  /*  		background-image:url('{$baseUrl}/lib/pkp/templates/images/structure/workflow_current.png'); */
+}
+.pkp_page_header .submission_progress li.current a {
+  font-size: 13px;
+}
+.pkp_page_header .submission_progress li.current.productionReady {
+  /* 			background-image:url('{$baseUrl}/lib/pkp/templates/images/structure/workflow_productionReadyCurrent.png') !important; */
+}
+.pkp_page_header .submission_progress li.complete a:after {
+  background-color: #e5f4e5;
+}
+.pkp_page_header .submission_progress li.current a:after {
+  background-color: #eaf3f8;
+}
+.pkp_page_header .submission_progress li:before {
+  margin-left: 2px;
+  left: 100%;
+  z-index: 1;
+}
+.pkp_page_header .submission_progress li a:after {
+  background-color: white;
+  content: " ";
+  display: block;
+  width: 1px;
+  top: 0;
+  height: 37px;
+  position: absolute;
+}
+#reviewTabs .ui-tabs-nav a.pkp_controllers_linkAction {
+  line-height: 0px;
+}
+/* Bug #8282: Scrollable tabs controls overlap tab names */
+.stTabsInnerWrapper {
+  /* Make sure the tabs don't overlap the navigation controls */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.stTabsMainWrapper ul.ui-tabs-nav {
+  /* Keep the scrolled tabs from peeking out from under the nav controls */
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.stNav {
+  /* Adjust the height of the scrollable tab controls */
+  height: 23px !important;
+  padding-top: 7px;
+}
+/* Additional styles: clean up? */
+.loading_container {
+  text-align: center;
+  padding-top: 10px;
+}
+.loading_container .pkp_helpers_progressIndicator {
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  display: block;
+}
+.grid_actions {
+  padding: 22px 0 22px 0;
+  overflow: hidden;
+}
+.grid_actions a {
+  padding: 0;
+  /**
+		 * FIXME: !important elements needed in the event CSS
+		 * application order vis-a-vis jQueryUI is reversed (see
+		 * editor decision actions on review interface in OMP)
+		 */
+  margin: 0 -3px 0 0 !important;
+  border-style: none !important;
+  border-color: white !important;
+  border-width: 0 0 0 0 !important;
+  background: #0c3b66 url({$baseUrl}/lib/pkp/templates/images/button_bg_slice.png) repeat-x;
+  height: 24px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+.grid_actions a:first-child {
+  -webkit-top-left-border-radius: 5px;
+  -webkit-bottom-left-border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.grid_actions a:last-child {
+  -webkit-top-right-border-radius: 5px;
+  -webkit-bottom-right-border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.action_links {
+  line-height: 24px;
+  height: 24px;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.action_links a {
+  font-size: 90%;
+  margin-right: 20px;
+  float: left;
+}
+.pkp_help {
+  line-height: 14px;
+}
+/**
+ * OMP application imports
+ */
+/* Structure */
+/**
+ * @file styles/structure/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_structure
+ *
+ * @brief Wrapper for pkp_structure
+ */
+/* PKP structures */
+/* Link Actions */
+/**
+ * @file styles/linkActions.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_linkActions
+ *
+ * @brief OMP-specific LinkAction stuff
+ */
+/* Import PKP library grid styles */
+/**
+ * @defgroup pkp_linkActions
+ */
+/**
+ * @file styles/linkActions.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_linkActions
+ *
+ * @brief Link action classes
+ */
+.pkp_linkActions {
+  /* Actions */
+}
+.pkp_linkActions a.promote {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/grid_promote.png);
+}
+.pkp_linkActions a.enable {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/grid_promote.png);
+}
+.pkp_linkActions a {
+  display: inline-block;
+}
+/* Listing tables */
+/**
+ * @defgroup pkp_listing
+ */
+/**
+ * @file styles/listing.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_listing
+ *
+ * @brief Listing table classes
+ */
+table.pkp_listing td {
+  padding: 0.25em 1.5em 0.25em 0.5em;
+}
+table.pkp_listing tr.heading td,
+table.pkp_listing td.heading {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0.75em 1.5em 1em 0.5em;
+}
+table.pkp_listing td.nodata {
+  text-align: center;
+  font-style: italic;
+}
+table.pkp_listing td.headseparator {
+  border-top: 1px dotted #000;
+  font-size: 0.1em;
+  line-height: 1%;
+}
+table.pkp_listing td.endseparator {
+  border-top: 1px dotted #000;
+  font-size: 0.25em;
+  line-height: 10%;
+}
+table.pkp_listing td.separator {
+  border-top: 1px dotted #DDDDD0;
+  font-size: 0.1em;
+  line-height: 1%;
+}
+/* Controllers */
+/**
+ * @file styles/controllers/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Controllers stylesheet wrapper
+ *
+ */
+/**
+ * @defgroup pkp_form
+ */
+/**
+ * @file styles/form/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_form
+ *
+ * @brief Wrapper for pkp_form
+ */
+/* Form Styles */
+/**
+ * @defgroup pkp_form
+ */
+/**
+ * @file styles/form.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_form
+ *
+ * @brief Form Builder Vocabulary classes
+ */
+/**
+ * The following styles are moved outside pkp_form until all forms are
+ * refactored/made compatible with the FBV styles.
+ */
+.error {
+  color: #900;
+}
+span.pkp_form_error {
+  color: #900;
+  font-weight: bold;
+  font-size: 100%;
+}
+.pkp_form_error_list a {
+  color: #900;
+}
+/**
+ * FBV styles
+ */
+.pkp_form .pkp_formArea p {
+  margin: 0px;
+  padding: 0px;
+}
+.pkp_form .debug div,
+.pkp_form .debug label {
+  border: 1px solid orange;
+}
+.pkp_form fieldset {
+  margin: 10px 5px;
+}
+.pkp_form fieldset.border {
+  border: 1px solid #CCC;
+  padding: 5px;
+}
+.pkp_form fieldset.inline {
+  margin: 0px 0px;
+}
+.pkp_form legend {
+  font-size: 110%;
+  padding: 10px 0 10px 0;
+}
+.pkp_form div.section {
+  clear: left;
+  margin-bottom: 10px;
+}
+.pkp_form div.section:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.pkp_form label {
+  display: block;
+  font-weight: bold;
+  padding: 3px 0 3px 0;
+}
+.pkp_form span.pkp_form_success {
+  color: #090;
+  font-weight: bold;
+  font-size: 100%;
+}
+.pkp_form span label.sub_label {
+  font-size: 80%;
+  color: #999;
+  font-weight: normal;
+  padding: 2px 0 4px 0;
+}
+.pkp_form input,
+.pkp_form textarea,
+.pkp_form select {
+  font-size: 90%;
+  width: 99%;
+  border: 1px solid #ccc;
+  padding: 2px;
+  margin-top: 4px;
+}
+.pkp_form input :focus,
+.pkp_form textarea :focus,
+.pkp_form select :focus {
+  outline: none;
+}
+.pkp_form select {
+  padding: 3px;
+  width: 100%;
+}
+.pkp_form textarea {
+  height: 10em;
+}
+.pkp_form .short {
+  height: 6em;
+}
+.pkp_form .medium {
+  height: 12em;
+}
+.pkp_form .tall {
+  height: 18em;
+}
+.pkp_form .req {
+  font-weight: bold;
+  color: #cc0000;
+  padding-left: 3px;
+}
+.pkp_form .inline {
+  float: left;
+  clear: none !important;
+  padding-right: 2%;
+  margin-bottom: 0;
+}
+.pkp_form ul.checkbox_and_radiobutton {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.pkp_form .checkbox_and_radiobutton li {
+  padding-right: 35px;
+  float: left;
+  display: inline;
+  list-style: none;
+}
+.pkp_form .checkbox_and_radiobutton input {
+  display: block;
+  margin: 4px 0 0 0;
+  padding: 0;
+  width: 13px;
+  height: 13px;
+}
+.pkp_form .checkbox_and_radiobutton li label {
+  line-height: 150%;
+  margin: -17px 0 0 20px;
+  padding: 0 0 5px 0;
+  font-weight: normal;
+}
+.pkp_form ul.checkbox_and_radiobutton:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.pkp_form .mcePlaceholderParent {
+  position: relative;
+}
+.pkp_form .mcePlaceholder {
+  color: #AAA;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+.pkp_form .localization_popover_container td.mceFirst iframe {
+  position: relative;
+  z-index: 1;
+}
+.pkp_form .localization_popover_container div.mceLocalizationIcon {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+}
+.pkp_form .localization_popover_container div.mceLocalizationIconScroll {
+  right: 20px;
+}
+.pkp_form div.mceLocalizationIconParent {
+  position: relative;
+}
+.pkp_form .localization_popover_container_focus {
+  margin-top: -2px;
+  background-color: #eee;
+  display: block;
+  padding: 2px 5px 0px 5px;
+}
+.pkp_form .localization_popover_container_focus,
+.pkp_form .localization_popover {
+  box-shadow: 3px 3px 6px #999999;
+}
+.pkp_form .localization_popover_container_focus input:first-child,
+.pkp_form .localization_popover input:first-child,
+.pkp_form .localization_popover_container_focus textarea:first-child,
+.pkp_form .localization_popover textarea:first-child,
+.pkp_form .localization_popover_container_focus select:first-child,
+.pkp_form .localization_popover select:first-child {
+  background-image: none;
+}
+.pkp_form .localization_popover_container_focus div.mceGlobe,
+.pkp_form .localization_popover div.mceGlobe {
+  display: none;
+}
+.pkp_form .localization_popover {
+  background-color: #eee;
+  margin-left: -5px;
+  padding: 10px 5px 5px 5px;
+  position: absolute;
+  z-index: 15000;
+  display: none;
+}
+.pkp_form label.locale {
+  font-size: 1px;
+  text-indent: -9999px;
+}
+.pkp_form .localizable {
+  background-color: #fff !important;
+  background-repeat: no-repeat;
+  background: url({$baseUrl}/lib/pkp/templates/images/structure/icon_globe.png) no-repeat;
+  background-position: 99.5% 50%;
+}
+.pkp_form textarea.localizable {
+  background-position: 99.5% 1px;
+}
+.pkp_form input.spinner {
+  background-color: #ffffff !important;
+  background-repeat: no-repeat;
+  background: url({$baseUrl}/lib/pkp/templates/images/throbber.gif) no-repeat;
+  background-position: 100% 50%;
+}
+.pkp_form .pkp_form_file_input_container {
+  height: 30px;
+  width: 350px;
+  position: relative;
+  float: left;
+}
+.pkp_form .pkp_form_file_input_container .pkp_form_fakeFile {
+  left: 0;
+  line-height: 90%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 350px;
+  z-index: 1;
+}
+.pkp_form .pkp_form_file_input_container .pkp_form_fakeInput {
+  margin-bottom: 5px;
+  margin-left: 0;
+  height: 15px;
+  padding-left: 3px;
+  padding-top: 1px;
+  width: 241px;
+}
+.pkp_form .pkp_form_file_input_container .pkp_form_fakeButton {
+  line-height: 90%;
+}
+.pkp_form .pkp_form_file_input_container .pkp_form_uploadFile {
+  line-height: 90%;
+  height: 29px;
+}
+.pkp_form input.pkp_form_upload_field {
+  padding: 3px;
+  margin: 0;
+  height: 30px;
+  width: 350px;
+  position: relative;
+  z-index: 2;
+  text-align: right;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.pkp_form .pkp_form_hidden {
+  display: none !important;
+}
+.pkp_form .formButtons {
+  line-height: 30px;
+  margin: 0 0 15px;
+  overflow: hidden;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.pkp_form .formButtons .submitFormButton {
+  float: right;
+}
+.pkp_form .formButtons .resetFormButton,
+.pkp_form .formButtons .cancelFormButton {
+  float: left;
+}
+.pkp_form .formButtons div.clear {
+  clear: both;
+}
+/* Localization Flags */
+/**
+ * @file ./index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_grid
+ *
+ * @brief Wrapper for pkp_controllers_grid
+ */
+/* Import PKP library grid styles */
+/* @import url("./files/index.less"); */
+/* Grid Styles */
+/** 
+ * @file styles/controllers/grid/settings.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_grid
+ *
+ * @brief Classes for grids used on settings pages.
+ */
+div.pkp_controllers_grid .pkp_controllers_grid_settings_stages {
+  display: block;
+  float: left;
+  width: 20%;
+}
+/** 
+ * @file styles/controllers/grid/stageParticipant.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_grid
+ *
+ * @brief Classes for stage participant grid.
+ */
+div#stageParticipantGridContainer tr.category td {
+  height: 26px;
+  font-size: 100%;
+  text-transform: none !important;
+  font-family: inherit !important;
+}
+div#stageParticipantGridContainer thead {
+  display: none;
+}
+div#stageParticipantGridContainer .pkp_controllers_grid {
+  margin-top: 0px;
+}
+div#stageParticipantGridContainer div.pkp_controllers_grid .row_file {
+  margin-top: 0px;
+}
+div#stageParticipantGridContainer div.pkp_controllers_grid .row_container .row_actions,
+div#stageParticipantGridContainer div.pkp_controllers_grid .row_container,
+div#stageParticipantGridContainer div.pkp_controllers_grid tr.gridRow td {
+  height: 25px;
+}
+div#stageParticipantGridContainer div.pkp_controllers_grid div.actions {
+  margin: 0px;
+}
+div#stageParticipantGridContainer .category_placeholder {
+  display: none !important;
+}
+/**
+ * @file styles/controllers/listbuilder/index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_listbuilder
+ *
+ * @brief Wrapper for pkp_controllers_listbuilder
+ */
+/* Import PKP library listbuilder styles */
+/* Listbuilder Styles */
+/**
+ * @file styles/controllers/listbuilder/listbuilder.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_listbuilder
+ *
+ * @brief Classes for listbuilder structure
+ */
+div.pkp_controllers_listbuilder {
+  /* Nothing yet */
+}
+/**
+ * @defgroup pkp_controllers_extrasOnDemand
+ */
+/**
+ * @file styles/controllers/extrasOnDemand.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_extrasOnDemand
+ *
+ * @brief Styles for pkp_controllers_extrasOnDemand
+ */
+.pkp_controllers_extrasOnDemand .ui-icon {
+  float: left;
+}
+.pkp_controllers_extrasOnDemand .toggleExtras {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  float: left;
+  /* The following allows us to
+		   implement a graceful fallback in case
+		   JS is disabled. */
+  display: none;
+}
+/**
+ * @defgroup pkp_controllers_notification
+ */
+/**
+ * @file styles/controllers/notification.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_notification
+ *
+ * @brief Styles for pkp_controllers_notification
+ */
+.ui-widget.ui-pnotify {
+  width: 320px !important;
+}
+div.ui-pnotify-container {
+  background: #c9e3f8;
+  border: 1px solid #559abd;
+}
+.ui-pnotify-icon {
+  background-repeat: no-repeat !important;
+  padding-right: 16px;
+  height: 18px;
+}
+.notifyError div.ui-pnotify-container,
+.notifyFormError div.ui-pnotify-container {
+  background: #f8dada;
+  border: 1px solid #9a0000;
+}
+.notifyError .ui-pnotify-icon,
+.notifyFormError .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_error.png);
+}
+.notifySuccess .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_success.png);
+}
+.notifyWarning .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_warning.png);
+}
+.notifyForbidden .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_forbidden.png);
+}
+.notifyInformation .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_info.png);
+}
+.notifyHelp .ui-pnotify-icon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/response_help.png);
+}
+.pkp_notification {
+  margin-top: 10px;
+  text-align: left;
+  /* -- Iconography: http://www.jankoatwarpspeed.com/post/2009/09/17/sixpack-status-icons.aspx --*/
+}
+.pkp_notification .notification_block {
+  background-position: 7px 5px !important;
+  background-repeat: no-repeat !important;
+  padding: 5px 20px 5px 30px;
+  min-height: 20px;
+}
+.pkp_notification p {
+  display: inline;
+  padding: 0px;
+  font-size: 80%;
+}
+.pkp_notification h4 {
+  display: inline;
+  padding-right: 0px;
+}
+.pkp_notification .pkp_linkActions {
+  line-height: 24px;
+}
+.pkp_notification .notifySuccess {
+  background: #c9e3f8 url({$baseUrl}/lib/pkp/templates/images/structure/response_success.png);
+}
+.pkp_notification .notifyWarning {
+  background: #c9e3f8 url({$baseUrl}/lib/pkp/templates/images/structure/response_warning.png);
+}
+.pkp_notification .notifyError,
+.pkp_notification .notifyFormError {
+  background: #f8dada url({$baseUrl}/lib/pkp/templates/images/structure/response_error.png);
+}
+.pkp_notification .notifyForbidden {
+  background: #f8dada url({$baseUrl}/lib/pkp/templates/images/structure/response_forbidden.png);
+}
+.pkp_notification .notifyInformation {
+  background: #c9e3f8 url({$baseUrl}/lib/pkp/templates/images/structure/response_info.png);
+}
+.pkp_notification .notifyHelp {
+  background: #c9e3f8 url({$baseUrl}/lib/pkp/templates/images/structure/response_help.png);
+}
+/**
+ * @file styles/controllers/tab.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_controllers_tab
+ *
+ * @brief Styles for pkp_controllers_tab
+ */
+.pkp_controllers_tab .ui-icon-close {
+  float: left;
+  cursor: pointer;
+  margin: 0.4em 0.2em 0 0;
+}
+/**
+ * @file styles/controllers/modal.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_modal
+ *
+ * @brief Modal styles
+ */
+/* Bring in PKP library modal styles */
+/**
+ * @defgroup pkp_controllers_modal
+ */
+/**
+ * @file styles/controllers/modal.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_modal
+ *
+ * @brief Styles for pkp_controllers_modal
+ */
+.pkp_controllers_modal_titleBar {
+  height: 48px;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #efefef;
+}
+.pkp_controllers_modal_titleBar h2 {
+  margin-left: 20px;
+  font-style: italic;
+}
+.pkp_controllers_modal_titleBar .close {
+  float: right;
+  padding-right: 10px;
+}
+.xIcon {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/modal_close_icon.png);
+  height: 23px;
+  width: 23px !important;
+  background-repeat: no-repeat;
+  display: block;
+  overflow: hidden;
+  text-indent: -99999px;
+  border: none !important;
+}
+.modal-buttons {
+  margin: 0px 0px 15px 0px;
+  padding: 0px 20px 0px 20px;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.ui-dialog .ui-tabs-panel {
+  padding: 0px;
+}
+.ui-widget-overlay {
+  background: #333333 50% 50% repeat-x;
+  opacity: 0.8;
+}
+.ui-dialog {
+  background-color: #f7f5f4;
+}
+.ui-dialog-content {
+  background-color: #ffffff !important;
+}
+.ui-dialog-buttonpane {
+  border-color: #f7f5f4;
+}
+/**
+ * Various modal header icons
+ */
+/**
+ * Add reviewer modal
+ */
+.reviewerFormFooterContainer {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #c8c7c7;
+}
+/**
+ * Styles to better adapt the content of plugins that don't
+ * have their UI adapted to OMP. 
+ * FIXME: this must be removed after all plugins are adapted. 
+ */
+.legacy_plugin_content .pkp_form input {
+  width: none;
+}
+.legacy_plugin_content .pkp_form .pkp_listing input {
+  width: 99%;
+}
+.legacy_plugin_content .pkp_form .pkp_listing .highlight {
+  background: yellow;
+}
+/**
+ * @file styles/controllers/informationCenter.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @ingroup pkp_controllers_informationCenter
+ *
+ * @brief Information Center styles
+ */
+span.pkp_controllers_informationCenter_itemLastEvent {
+  color: #888;
+  font-size: 80%;
+}
+.pkp_controllers_informationCenter #notesList {
+  max-height: 200px;
+  overflow: auto;
+  padding-right: 5px;
+}
+.pkp_controllers_informationCenter #notesList .newNote {
+  background-color: orange1;
+}
+.pkp_controllers_informationCenter #informationCenterHistoryTab .heading td {
+  font-weight: bold;
+}
+/**
+ * @file styles/controllers/rangeSlider.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @ingroup pkp_controllers_rangeSlider
+ *
+ * @brief Range slider widget styles
+ */
+.pkp_controllers_rangeSlider .pkp_controllers_rangeSlider_sliderLabel {
+  margin-bottom: 10px;
+  font-size: 80%;
+}
+.pkp_controllers_rangeSlider .pkp_controllers_rangeSlider_sliderValue {
+  border: 0pt none;
+  font-weight: bold;
+  width: 50px;
+}
+.pkp_controllers_rangeSlider .pkp_controllers_rangeSlider_slider {
+  margin-left: 13px;
+  width: 240px;
+}
+.pkp_controllers_rangeSlider label {
+  display: inline;
+  margin-right: 5px;
+}
+/* Styles specific to template subfolders. */
+/**
+ * @file styles/common.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * 
+ * @brief Styles for common templates.
+ *
+ */
+div.separator {
+  height: 20px;
+}
+.ui-tabs .ui-tabs-panel {
+  padding: 1em 1.2em;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 1em 2.5em;
+}
+.pkp_common_reviewRoundStatusContainer {
+  height: 40px;
+  margin: 11px;
+  border: 2px solid black;
+  background-color: #ffffdd;
+}
+a.pkp_common_disabled,
+a.pkp_common_disabled:hover {
+  color: #666;
+}
+.button.ui-state-default,
+.ui-button {
+  /* 	background: #0C3B66 url({$baseUrl}/lib/pkp/templates/images/button_bg_slice.png) repeat-x !important; */
+  /**
+	 * !important elements needed in the event CSS application order
+	 * vis-a-vis jQueryUI is reversed (see editor decision actions in the
+	 * review interface in OMP)
+	 */
+  color: white;
+  border-style: none;
+  border-color: white;
+  border-width: 0 0 0 0;
+  font-weight: normal;
+  /* 	font-family: Arial,Helvetica,sans-serif !important; */
+  /* 	font-size: 12px !important; */
+}
+.button.ui-state-hover,
+.ui-button.ui-state-hover,
+.button.ui-state-active,
+.ui-button.ui-state-active {
+  /* 	background: #0C3B66 url({$baseUrl}/lib/pkp/templates/images/button_bg_slice_hover.png) repeat-x !important; */
+  /**
+	 * !important elements needed in the event CSS application order
+	 * vis-a-vis jQueryUI is reversed (see editor decision actions in the
+	 * review interface in OMP)
+	 */
+  /* 	color: white !important; */
+  /* 	border-style: none !important; */
+  /* 	border-color: white !important; */
+  /* 	border-width: 0 0 0 0 !important; */
+}
+#pressSwitcher .section {
+  width: 200px;
+}
+div.linkToEditPage {
+  margin-top: -25px;
+}
+div.noteWrapper {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+span.noteFile {
+  float: left;
+  line-height: 24px;
+  margin-top: 10px;
+}
+/**
+ * IE7 css general hacks
+ */
+/* Menu */
+ul.sf-menu {
+  position: relative;
+  z-index: 1000;
+}
+/* Tabs */
+.ui-tabs .ui-tabs-nav li {
+  /* 	margin-bottom: 0px !important; */
+}
+/* Press switcher */
+#pressSwitcherSelect {
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+/**
+ * @file styles/submission.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles for submission wizard pages
+ *
+ */
+#pkp_submissionChecklist ul li label.error {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/**
+ * @file ./index.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Pages stylesheet wrapper
+ *
+ */
+/**
+ * @file styles/pages/manageCatalog.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles for the submission management pages
+ *
+ */
+.pkp_manageCatalog_monographList {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_monograph {
+  width: 150px;
+  float: left;
+  margin: 1px 5px -70px 5px;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_monograph_image {
+  height: 100px;
+  overflow: hidden;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_monograph_authorship {
+  padding-bottom: 5px;
+  color: #999;
+  padding-top: 2px;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_monograph_date {
+  padding-top: 10px;
+  padding-top: 5px;
+  color: #999;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_featureTools {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.pkp_manageCatalog_monographList.grid_view .pkp_manageCatalog_featureTools li {
+  padding-bottom: 10px;
+}
+/**
+ * @file styles/pages/catalog.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles for the public catalog
+ *
+ */
+.h4ItemTitle {
+  color: black;
+  font-size: 125%;
+}
+.authorName {
+  color: #999999;
+}
+.monographAbstract {
+  text-align: justify;
+}
+.pkp_catalog_carousel_wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_monograph_authorship {
+  color: #999999;
+}
+.pkp_catalog_carousel_wrapper h4 {
+  color: black;
+  font-size: 125%;
+}
+.pkp_catalog_carousel_wrapper .carousel_control {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 65%;
+  z-index: 1000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pkp_catalog_carousel_wrapper .carousel_control:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.pkp_catalog_carousel_wrapper #nextCarouselItem {
+  left: 92%;
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/carousel_next.png);
+}
+.pkp_catalog_carousel_wrapper #previousCarouselItem {
+  background-image: url({$baseUrl}/lib/pkp/templates/images/structure/carousel_previous.png);
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel {
+  width: 72%;
+  height: 380px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel .pkp_helpers_progressIndicator {
+  background-position: 50% 50%;
+  background-color: white;
+  float: none;
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.mover {
+  width: 240px;
+  height: 303px;
+  display: table;
+  filter: none !important;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.mover span.moverImg {
+  vertical-align: middle;
+  display: table-cell;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.mover div.pkp_helpers_black_bg {
+  /* 				filter: alpha(opacity=100%); */
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.mover img {
+  width: 100%;
+  padding: 0px;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.placeholder {
+  box-shadow: none !important;
+  background-color: inherit !important;
+  margin-left: -10%;
+  padding-left: 5%;
+  padding-right: 15%;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.placeholder:hover {
+  cursor: default !important;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.mover:hover {
+  cursor: pointer;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel li.roundabout-in-focus:hover {
+  cursor: default;
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel .details_box {
+  background-color: white;
+  border: 2px solid gray;
+  left: 150px;
+  min-height: 100px;
+  padding: 15px;
+  position: absolute;
+  top: 50px;
+  width: 85%;
+  /* 			filter: alpha(opacity=100%) !important; */
+}
+.pkp_catalog_carousel_wrapper .pkp_catalog_carousel .details_box .pkp_catalog_formats {
+  margin-top: 10px;
+}
+/* Chrome only: prevent the carousel from getting cut off at the bottom */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .pkp_catalog_carousel_wrapper {
+    padding-bottom: 15px;
+  }
+}
+.pkp_catalog_readMore {
+  margin-top: 10px;
+}
+.pkp_catalog_seriesDescription,
+.pkp_catalog_categoryDescription {
+  border-top: 1px dotted #999999;
+  padding-top: 10px;
+}
+.pkp_catalog_monographs {
+  clear: both;
+  padding-top: 10px;
+}
+.pkp_catalog_monographs .pkp_catalog_monograph {
+  width: 150px;
+  float: left;
+  margin: 3px 10px 3px 0;
+  color: #999;
+}
+.pkp_catalog_monographs .pkp_catalog_monograph .pkp_catalog_monograph_thumbnail {
+  margin-bottom: 5px;
+}
+.pkp_catalog_monographs .pkp_catalog_monograph .pkp_catalog_monographSubtitle {
+  font-style: italic;
+}
+.pkp_catalog_monograph_authorship {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.pkp_catalog_feature {
+  padding-top: 10px;
+  margin-left: 10px;
+  line-height: 18px;
+}
+.pkp_catalog_feature .pkp_catalog_feature_abstract {
+  text-align: justify;
+}
+.pkp_catalog_feature .pkp_catalog_feature_authorName {
+  color: #999999;
+}
+.pkp_catalog_book .bookSpecs {
+  float: left;
+  width: 33%;
+  overflow: hidden;
+}
+.pkp_catalog_book .bookSpecs img {
+  width: 100%;
+}
+.pkp_catalog_book .bookInfo {
+  /* Floated to keep tab interface from messing up */
+  float: right;
+  width: 67%;
+}
+.pkp_catalog_book .bookInfo .bookInfoHeader {
+  padding-left: 18px;
+  margin-bottom: 25px;
+}
+.pkp_catalog_book .bookInfo .bookInfoHeader .authorName {
+  color: #999999;
+}
+.pkp_catalog_book .bookInfo .publicationFormatName {
+  float: left;
+  width: 50%;
+}
+.pkp_catalog_book .bookInfo #abstractTab {
+  text-align: justify;
+}
+.pkp_catalog_book #bookAccordion .ui-accordion-content {
+  color: #999999;
+}
+.pkp_catalog_book .ui-tabs-panel {
+  border-bottom: 1px solid #999999;
+  border-radius: 0px;
+  padding-bottom: 50px;
+}
+#spotlightsHome {
+  padding-bottom: 15px;
+  overflow: auto;
+}
+#spotlightsHome .pkp_helpers_third {
+  width: 33%;
+}
+#spotlightsHome h4 {
+  color: black;
+  font-size: 125%;
+}
+.pkp_catalog_spotlight {
+  border-top: 1px solid #c8c7c7;
+  font-size: 100%;
+  line-height: 18px;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+.pkp_catalog_spotlight .pkp_catalog_spotlight_itemAuthorship {
+  color: #999999;
+  margin-bottom: 10px;
+}
+.pkp_catalog_spotlight .pkp_catalog_spotlight_itemDescription {
+  color: #999999;
+}
+.pkp_catalog_spotlight .pkp_catalog_spotlight_itemDescription p {
+  display: inline;
+}
+/**
+ * @file styles/pages/search.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Search stylesheet wrapper
+ *
+ */
+.pkp_structure_search #topSearchForm label {
+  z-index: 10;
+  margin-right: 0px;
+  left: 100px;
+}
+/**
+ * @file styles/pages/press.less
+ *
+ * Copyright (c) 2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles for the public press index page.
+ *
+ */
+#spotlightsHome ul {
+  margin-top: 20px;
+}
+#socialMediaBlocksContainer {
+  margin-top: 20px;
+}
+#socialMediaBlocksContainer .socialMediaBlock {
+  margin: 10px 0px;
+}
+#legend {
+  visibility: hidden;
+}
+#legend td a {
+  min-height: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#legend .pkp_legend_header {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #F9F6F3;
+}
+#legend td a.task {
+  width: 100%;
+  text-indent: -1500px;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+#browseCategoryContainer,
+#browseSeriesContainer {
+  margin-bottom: 10px;
+}
